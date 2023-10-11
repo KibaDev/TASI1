@@ -1,0 +1,32 @@
+/*Styles go here*/
+h1 {
+    color:hsl(85, 90%, 70%);
+    background-color: cadetblue;
+    text-align: center;
+} 
+
+div {
+    width: 400px;
+    background-color: chartreuse;
+    border: 35px saddlebrown;
+    padding: 60px;
+    margin: 25px;
+
+}
+
+p {
+    background-color: rgba(222, 71, 43, 0.7);
+
+    text-align: right;
+    border-color: yellow magenta;
+    border-style: solid;
+}
+
+.exception {
+    color:yellowgreen;
+}
+
+#excelso {
+    color: blueviolet;
+    text-align: right;
+}
