@@ -1,9 +1,16 @@
+/* Estilos generales */
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+}
+
+/* Variables de colores */
 :root {
   --azul1: #05668d;
   --azul2: #427aa1;
@@ -15,84 +22,48 @@
   --negro: #272727;
 }
 
-#hero {
-  background-image: url("/public/assets/images/hero-image.jpeg");
-  background-size: cover;
-  background-position: center;
-  color: #fff;
+/* Estilos para el contenedor principal */
+.container {
   text-align: center;
-  display: flex; /* Para centrar verticalmente el contenido */
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  width: 100%;
-  height: 100%;
-  padding: 10rem 0;
+  margin-bottom: 20px;
+  width: 1440px;
+  height: 600px;
+  background-image: url("assets/images/bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#hero h1 .hero-title-header {
-  font-size: 1.5rem;
+/* Estilos para el diseño flexible */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  height: 100%; /* Para ocupar toda la altura disponible dentro de .container */
 }
 
-#hero h1 .hero-title {
-  font-size: 6rem;
+.flex > div {
+  flex: 1;
+  padding: 20px; /* Añade algún espacio entre los elementos dentro del div */
 }
 
-#hero-btn {
-  margin-top: 1rem;
-  background-color: var(
-    --verde-oscuro
-  ); /* Usa la variable para el color de fondo */
-  color: var(--blanco); /* Usa la variable para el color del texto */
-  font-size: 1rem;
-  padding: 0.5rem 2rem; /* Ajusta el espaciado según tus preferencias */
-  border: 1px solid var(--verde-oscuro); /* Borde ligeramente bordeado */
-  border-radius: 5px; /* Bordes ligeramente redondeados */
-  transition: background-color 0.3s, color 0.3s; /* Agregar una transición suave */
-
-  /* Efecto de hover */
-  &:hover {
-    background-color: var(
-      --verde-claro
-    ); /* Cambia el color de fondo al hacer hover */
-    border: 1px solid var(--verde-claro);
-    color: var(--blanco); /* Cambia el color del texto al hacer hover */
-  }
-
-  /* Efecto de clic */
-  &:active {
-    background-color: var(--azul1); /* Cambia el color de fondo al hacer clic */
-  }
+.flex p {
+  font-size: 14px;
+  font-weight: medium; /* Cambia la ponderación de la fuente a medium */
+  text-align: left; /* Alinea el texto a la izquierda */
 }
 
-/* Estilos para los botones de descarga */
-.app-download-button,
-.play-download-button {
-  display: inline-block;
-  margin: 20px;
-  padding: 10px 20px;
-  background-color: var(--negro);
-  color: var(--blanco);
-  text-decoration: none;
-  border: 1px solid var(--negro);
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: background-color 0.3s, color 0.3s;
+/* Estilos para los encabezados */
+.header {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--azul1);
 }
 
-/* Iconos */
-i.fab.fa-apple,
-i.fab.fa-google-play {
-  margin-left: 5px; /* Espaciado entre el texto y el icono */
+.subheader {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  text-align: center !important;
 }
 
-/* Efectos de hover y clic para los botones */
-.app-download-button:hover,
-.play-download-button:hover {
-  background-color: var(--negro);
-  color: var(--blanco);
-}
-
-.app-download-button:active,
-.play-download-button:active {
-  background-color: var(--verde-oscuro);
+.enjoy {
+  color: var(--verde-oscuro);
 }
