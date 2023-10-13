@@ -59,6 +59,28 @@ p.cab {
   top: 5px;
 }
 
+.logo {
+  
+  background-color: rgb(255, 254, 254);
+  padding: 60px;
+  display: flex;
+
+}
+
+.logo img {
+  position: relative;
+  right: -400px;
+}
+
+p.logo {
+  font-size: x-large;
+  height: auto;
+  color:black;
+  position: relative;
+  right: -400px;
+  top: 5px;
+}
+
 .foot {
   
   background-color: rgb(37, 36, 36);
