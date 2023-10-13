@@ -1,0 +1,98 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --azul1: #05668d;
+  --azul2: #427aa1;
+  --blanco-azulado: #ebf2fa;
+  --verde-oscuro: #679436;
+  --verde-claro: #a5be00;
+  --marron: #915d49;
+  --blanco: #ffffff;
+  --negro: #272727;
+}
+
+#hero {
+  background-image: url("/public/assets/images/hero-image.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  display: flex; /* Para centrar verticalmente el contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  width: 100%;
+  height: 100%;
+  padding: 10rem 0;
+}
+
+#hero h1 .hero-title-header {
+  font-size: 1.5rem;
+}
+
+#hero h1 .hero-title {
+  font-size: 6rem;
+}
+
+#hero-btn {
+  margin-top: 1rem;
+  background-color: var(
+    --verde-oscuro
+  ); /* Usa la variable para el color de fondo */
+  color: var(--blanco); /* Usa la variable para el color del texto */
+  font-size: 1rem;
+  padding: 0.5rem 2rem; /* Ajusta el espaciado según tus preferencias */
+  border: 1px solid var(--verde-oscuro); /* Borde ligeramente bordeado */
+  border-radius: 5px; /* Bordes ligeramente redondeados */
+  transition: background-color 0.3s, color 0.3s; /* Agregar una transición suave */
+
+  /* Efecto de hover */
+  &:hover {
+    background-color: var(
+      --verde-claro
+    ); /* Cambia el color de fondo al hacer hover */
+    border: 1px solid var(--verde-claro);
+    color: var(--blanco); /* Cambia el color del texto al hacer hover */
+  }
+
+  /* Efecto de clic */
+  &:active {
+    background-color: var(--azul1); /* Cambia el color de fondo al hacer clic */
+  }
+}
+
+/* Estilos para los botones de descarga */
+.app-download-button,
+.play-download-button {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: var(--negro);
+  color: var(--blanco);
+  text-decoration: none;
+  border: 1px solid var(--negro);
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Iconos */
+i.fab.fa-apple,
+i.fab.fa-google-play {
+  margin-left: 5px; /* Espaciado entre el texto y el icono */
+}
+
+/* Efectos de hover y clic para los botones */
+.app-download-button:hover,
+.play-download-button:hover {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+.app-download-button:active,
+.play-download-button:active {
+  background-color: var(--verde-oscuro);
+}
