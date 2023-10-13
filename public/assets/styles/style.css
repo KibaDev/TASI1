@@ -152,3 +152,98 @@
 .card-overlay p {
   font-size: 1rem;
 }
+
+/* Points */
+#points {
+  color: var(--negro);
+  text-align: center;
+  display: flex; /* Para centrar verticalmente el contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  width: 100%;
+  height: auto;
+  padding: 3rem;
+  background-color: var(--blanco-azulado);
+  flex-direction: column;
+}
+#points .elements {
+  display: flex; /* Para centrar verticalmente el contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 50px;
+}
+#points .element {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2em;
+}
+#points h2 {
+  margin-bottom: 1em;
+  font-weight: 600;
+  font-size: 35px;
+}
+#points h2 span {
+  color: var(--verde-claro);
+}
+
+#points .point-card {
+  background-color: white;
+  border-radius: 1em;
+  padding: 1em;
+  border-radius: 18px;
+  background: var(--Blanco, #FFF);
+  box-shadow: 0px 2px 4px 0px rgba(141, 141, 141, 0.25);
+}
+
+#points .point-card.overflow{
+  margin-top: 100px;
+}
+
+#points .point-card .image-card{
+  margin-top: -100px;
+}
+
+#points h5 {
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--azul1);
+}
+#points .point {
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: var(--azul1);
+}
+#points .element .description {
+  font-size: 20px;
+  font-weight: normal;
+}
+#points .element .description span {
+  font-weight: 600;
+  color: var(--azul1);
+}
+#points .percent  {
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 60px;
+}
+#points .cashback {
+  color: #787878;
+  font-size: 20px;
+}
+
+#points .point-card.secondary {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  text-align: left;
+}
+
+#points .point-card.secondary .hightlight {
+  color: var(--azul1);
+}
