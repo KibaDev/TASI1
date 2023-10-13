@@ -22,6 +22,40 @@ body {
   --negro: #272727;
 }
 
+div img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+div p {
+  display: inline-block;
+  vertical-align: middle;
+}
+.info-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-container img {
+  margin-right: 10px;
+}
+
+/* Alinea las imágenes a la izquierda dentro de .info-container */
+.imagen-izq {
+  float: left; /* Alinea la imagen a la izquierda */
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.imagen-izq-container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente la imagen y el texto */
+}
+
+.info-container p {
+  margin: 0; /* Elimina el margen del párrafo */
+}
+
 /* Estilos para el contenedor principal */
 .container {
   text-align: center;
